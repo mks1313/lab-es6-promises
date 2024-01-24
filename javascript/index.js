@@ -4,26 +4,26 @@
 // 🚨🚨🚨 Comment out the below code before you start working on the code
 
 // Out of sync
-// getInstruction("mashedPotatoes", 0, (step1) => {
-//   document.querySelector("#mashedPotatoes").innerHTML += `<li>${step1}</li>`;
-// }, (error) => console.log(error));
+getInstruction("mashedPotatoes", 0, (step1) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step1}</li>`;
+}, (error) => console.log(error));
 
-// getInstruction("mashedPotatoes", 1, (step2) => {
-//   document.querySelector("#mashedPotatoes").innerHTML += `<li>${step2}</li>`;
-// }, (error) => console.log(error));
+getInstruction("mashedPotatoes", 1, (step2) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step2}</li>`;
+}, (error) => console.log(error));
 
-// getInstruction("mashedPotatoes", 2, (step3) => {
-//   document.querySelector("#mashedPotatoes").innerHTML += `<li>${step3}</li>`;
-// }, (error) => console.log(error));
+getInstruction("mashedPotatoes", 2, (step3) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step3}</li>`;
+}, (error) => console.log(error));
 
-// getInstruction("mashedPotatoes", 3, (step4) => {
-//   document.querySelector("#mashedPotatoes").innerHTML += `<li>${step4}</li>`;
-// }, (error) => console.log(error));
+getInstruction("mashedPotatoes", 3, (step4) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step4}</li>`;
+}, (error) => console.log(error));
 
-// getInstruction("mashedPotatoes", 4, (step5) => {
-//   document.querySelector("#mashedPotatoes").innerHTML += `<li>${step5}</li>`;
-//   document.querySelector("#mashedPotatoesImg").removeAttribute("hidden");
-// }, (error) => console.log(error));
+getInstruction("mashedPotatoes", 4, (step5) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step5}</li>`;
+  document.querySelector("#mashedPotatoesImg").removeAttribute("hidden");
+}, (error) => console.log(error));
 
 
 
@@ -124,7 +124,7 @@ for(let i = 0; i < 8; i++) {
 }
 Promise.all(promiseAll).then((steps) => {
   steps.forEach((item) => {
-    document.querySelector("#brusselsSprouts").innerHTML += `<li>${item}<li>`;
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>${item}</li>`;
   })
   document.querySelector("#brusselsSprouts").innerHTML += `<li>${"Brussels sprouts are ready!"}</li>`;
   document.querySelector("#brusselsSproutsImg").removeAttribute("hidden");
